@@ -424,11 +424,11 @@ router.get('/orderhistory', async (req, res) => {
 });
 
 // Get all tables
+
 router.get('/tables', async (req, res) => {
   try {
-    console.log('GET /api/admin/tables called');
-    const result = await pool.query('SELECT id, table_number FROM tables ORDER BY table_number');
-    res.json(result.rows.map(row => row.table_number));
+    const result = await pool.query('SELECT table_number, qr_token FROM tables ORDER BY table_number');
+    res.json(result.rows);
   } catch (error) {
     console.error('Error fetching tables:', error);
     res.status(500).json({ error: error.message });
