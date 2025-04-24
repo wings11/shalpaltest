@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "../../assets/assets";
+
 import "./Home.css";
 import { Link, useLocation } from "react-router-dom";
 
@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div className="bg" style={{ backgroundImage: `url(${assets.cover})` }}>
             <div className="logo">
-                <img src={assets.logo} alt="Logo" />
+                <img src='https://res.cloudinary.com/dakgb0zrs/image/upload/v1745480251/logo_mw6gtv.svg' alt="Logo" />
             </div>
             <div className="menu">
                 <Link to={menuPath}>
