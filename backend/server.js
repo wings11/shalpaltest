@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 
 // CORS for frontend (update with actual frontend URL after deployment)
 app.use(cors({
-  origin: 'http://localhost:5173', // Update to Render/Netlify URL later
+  origin: 'https://shalpal-backend.onrender.com', // Update to Render/Netlify URL later
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
