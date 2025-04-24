@@ -1,0 +1,76 @@
+.today-Page {
+    height: 100vh auto;
+  }
+  .today-Page h1 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    overflow-y: hidden;
+    background-color: #ba915a;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+  }
+  
+  .today-style .foodItem {
+    margin-top: 42px;
+    margin-left: 10px;
+    width: 80%;
+    padding: 10px !important;
+    background-color: #fff4e3;
+    border: 1px solid black;
+    border-radius: 0px;
+  }
+  
+  .today-style .foodItem:hover {
+    filter: none !important;
+    background-color: inherit !important;
+    cursor: default !important;
+  }
+  
+  .today-style .foodItem .foodimgcontainer {
+    position: absolute;
+    z-index: auto;
+    transform: translate(-60%, -30%);
+    background-color: #fff4e3;
+    padding: 10px !important;
+  }
+  .today-style .foodItem .foodinfo {
+    font-family: M PLUS 1p, sans-serif;
+  }
+  
+  .today-style .foodItem:nth-child(even) .foodinfo {
+    background-color: #fff4e3 !important;
+    transform: translate(-10%, 0%);
+  }
+  .today-style .foodItem:nth-child(even) .price-addtocart {
+    position: relative;
+    background-color: #fff4e3 !important;
+    transform: translate(-160%, 0%);
+  }
+  
+  .today-style .foodItem:nth-child(even) .foodimgcontainer {
+    position: absolute;
+    margin-left: 700px !important;
+    background-color: #fff4e3 !important;
+  }
+  
+  @media only screen and (max-width: 885px) {
+    .today-style .foodItem .foodimgcontainer {
+      position: absolute;
+      z-index: auto;
+      background-color: #fff4e3;
+      padding: 10px !important;
+    }
+  
+    .today-style .foodItem:nth-child(even) .foodimgcontainer {
+      margin-left: 78% !important; /* Reset margin for mobile */
+      z-index: auto;
+      position: absolute;
+    }
+  }

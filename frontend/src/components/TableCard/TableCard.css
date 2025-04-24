@@ -1,0 +1,197 @@
+.tablecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.tablecard-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.tablecard img {
+  width: 50px;
+  height: 50px;
+}
+
+.tablecard-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+}
+
+.delete-text,
+.edit-text {
+  cursor: pointer;
+  color: #666;
+}
+
+.delete-text:hover,
+.edit-text:hover {
+  color: #000;
+}
+
+/* Delete Modal */
+.alert-overlay-delete {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert-box-delete {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+}
+
+.alert-box-delete i.bi-x-lg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.alert-box-delete p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.alert-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.alert-buttons i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.alert-buttons i.bi-check-circle {
+  color: green;
+}
+
+.alert-buttons i.bi-x-circle {
+  color: red;
+}
+
+/* Edit Modal */
+.alert-overlay-edit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert-box-edit {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 350px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.logotext-edit h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.logotext-edit span {
+  font-size: 14px;
+  color: #666;
+}
+
+.alert-box-edit i.bi-x-lg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.table-number-text {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+}
+
+.alert-box-edit input.form-control {
+  width: 80%;
+  padding: 8px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.alert-box-edit hr {
+  margin: 10px 0;
+}
+
+.alert-box-edit span {
+  font-size: 14px;
+  color: #333;
+}
+
+.get-Qr {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.get-Qr:hover {
+  text-decoration: underline;
+}
+
+.alert-box-edit button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.alert-box-edit button:hover {
+  background-color: #0056b3;
+}
+
+.qr-code-img {
+  max-width: 150px;
+  margin: 10px auto;
+  display: block;
+}

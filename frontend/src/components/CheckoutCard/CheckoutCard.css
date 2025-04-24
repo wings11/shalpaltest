@@ -1,0 +1,203 @@
+.checkout-card {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #b4b4b4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .checkout-card.normal {
+    background-color: #d9d9d9; /* Default gray color */
+  }
+  
+  .checkout-card.new-order {
+    background-color: #ff4d4d; /* Red for "New" status */
+  }
+  
+  .checkout-card.in-process {
+    background-color: #fde189; /* Yellow for "In Process" status */
+  }
+  
+  .checkout-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .checkout-card h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    overflow-y: hidden;
+    user-select: none;
+    outline: none;
+  }
+  
+  .invoice-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .invoice-content {
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .invoice-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 471px;
+    height: auto;
+    min-height: 947px;
+    text-align: center;
+    position: absolute;
+    top: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
+    font-family: "Inter Regular", sans-serif;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+  }
+  
+  .invoice-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .invoice-header img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .invoice-header h6 {
+    position: absolute;
+    top: 153px;
+    width: 270px;
+    height: 30px;
+    font-size: 12px;
+    color: black;
+  }
+  
+  .invoice-box .invoice-header hr {
+    color: green;
+  }
+  
+  .invoice-content p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  
+  .invoice-content p span:first-child {
+    font-weight: 500;
+  }
+  
+  .invoice-items {
+    margin: 20px 0;
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .invoice-table th,
+  .invoice-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .invoice-table th {
+    font-weight: 600;
+  }
+  
+  .invoice-total p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  
+  .invoice-total p span {
+    font-weight: 500;
+  }
+  
+  .payment {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .payment p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .Qr {
+    width: 180px;
+    height: 180px;
+    background-color: #ddd;
+    margin: 10px auto;
+  }
+  .Qr img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .invoice-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .invoice-btn {
+    width: 96px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .checkout-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #218838;
+  }
+  
+  .print-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .print-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .green-hr {
+    color: black;
+    border: 1.5px solid black;
+  }

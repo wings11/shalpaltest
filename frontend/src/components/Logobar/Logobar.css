@@ -1,0 +1,96 @@
+.logobar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    background-color: #fff4e3;
+    overflow-y: hidden;
+    cursor: pointer;
+    user-select: none; /* Prevents text selection */
+    outline: none; /* Removes default focus outline */
+  }
+  
+  .logofield img {
+    width: 120px;
+    padding-left: 10px;
+  }
+  
+  .logotext {
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 35px;
+  }
+  
+  .logotext h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    overflow-y: hidden;
+    display: flex;
+  }
+  
+  .logotext span {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    overflow-y: hidden;
+  }
+  
+  .contact {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 25px 0px 0px;
+  }
+  
+  .contact img {
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 2px;
+    padding: 0px 10px;
+  }
+  
+  .contact p {
+    padding-top: 10px;
+    margin: 0px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  
+  .contact span {
+    text-decoration: none;
+    margin: 0 0px;
+    font-size: 10px;
+    color: #555;
+  }
+  @media (max-width: 480px) {
+    .contact {
+      transform: translate(10px, 0px);
+    }
+    .contact p {
+      font-size: 8px;
+      padding: 0px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .logofield img {
+      width: 85px;
+      padding-left: 10px;
+    }
+    .logotext {
+      padding: 0px 0px 0px 0px;
+    }
+    .contact img {
+      margin-top: 5px;
+      width: 80%;
+      margin-bottom: 2px;
+      padding: 0px 10px;
+    }
+  }

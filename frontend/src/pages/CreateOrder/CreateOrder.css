@@ -1,0 +1,12 @@
+.layout_1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the layout takes full viewport height */
+  }
+  
+  .create-order-content {
+    flex: 1; /* Take remaining space */
+    padding: 20px;
+    text-align: center;
+  }
+  

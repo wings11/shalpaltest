@@ -1,0 +1,77 @@
+/* Navbar styling */
+.navbar {
+  position: relative; /* Establish positioning context */
+  padding: 0.5rem 1rem;
+  display: flex; /* Use flex to control layout */
+  align-items: center;
+}
+.navbar-toggler.custom-toggler {
+  background-color: #7f7f7f;
+}
+
+/* Custom toggler styling with adjustable padding */
+.custom-toggler {
+  margin: 20px;
+  padding: 1rem 1.5rem; /* Increased padding for more space around icon */
+  cursor: pointer;
+  display: inline-block !important; /* Ensure proper layout */
+  position: relative; /* Optional: for finer control */
+}
+
+/* Icon styling */
+.navbar-toggler-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1000;
+  left: 1rem; /* Offset from the left to align with toggler */
+  top: 0; /* Start from the top of the container */
+  transform: none; /* Remove transform to avoid misplacement */
+}
+
+.dropdown-menu.show {
+  display: block;
+  margin-top: 100px;
+  position: fixed;
+  top: 150px;
+  background-color: #d9d9d9;
+  border: 1px solid black;
+  width: 250px !important;
+  height: 400px;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  border: 1px solid black;
+
+  display: block;
+  width: 85% !important;
+  padding: 8px !important;
+  margin: 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700 !important;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+.dropdown-item:hover {
+  border-radius: 5px;
+  color: #16181b;
+  text-decoration: none;
+  background-color: #707070 !important;
+}

@@ -1,0 +1,65 @@
+.navbar-container {
+    font-family: "Poppins", sans-serif;
+    overflow-x: auto; /* ✅ Enable horizontal scrolling */
+    white-space: nowrap; /* ✅ Prevent wrapping */
+    width: 100%;
+    background-color: #f2d279;
+    display: flex;
+    justify-content: space-around;
+    scrollbar-width: none; /* ✅ Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* ✅ Hide scrollbar for IE and Edge */
+    cursor: pointer;
+    user-select: none; /* Prevents text selection */
+    outline: none; /* Removes default focus outline */
+  }
+  
+  .navbar-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  ul.navbar {
+    margin-top: 12px;
+    display: flex;
+    padding: 0px 0;
+    min-width: max-content;
+    overflow-x: auto;
+  }
+  
+  .nav-item {
+    padding: 0px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover {
+    color: white;
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-container {
+      position: sticky;
+      top: 0px;
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: flex-start;
+      padding: 5px 10px !important;
+      min-width: max-content;
+    }
+  
+    .nav-item {
+      margin: 0px 0px;
+      padding: 0px 10px !important;
+      transition: all 0.3s ease-in-out;
+    }
+    .nav-item.active {
+      color: white;
+    }
+  }

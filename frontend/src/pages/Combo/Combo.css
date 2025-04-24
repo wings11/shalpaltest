@@ -1,0 +1,135 @@
+.combo-page {
+    height: auto;
+  }
+  .combo-Page h1 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    overflow-y: hidden;
+    background-color: #ba915a;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none; /* Prevents text selection */
+    outline: none; /* Removes default focus outline */
+  }
+  .combostyle .foodDisplaylist {
+    margin-top: 0px;
+    padding-bottom: 80px !important;
+  }
+  .combostyle .foodItem {
+    margin-top: 80px;
+    width: 80%;
+    min-width: 80px;
+    padding: 25px !important;
+    background-color: #fff4e3;
+    border: 1px solid black;
+    border-radius: 0px;
+  }
+  .combostyle .foodItem:hover {
+    filter: none !important; /* Removes brightness effect */
+    background-color: inherit !important; /* Keeps the original background */
+    transition: none !important; /* Disables any hover animations */
+  }
+  
+  .combostyle .foodItem .foodinfo p {
+    display: inline;
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0px 10px 0px 10px;
+  }
+  .combo-Page .foodItem .foodinfo {
+    background-color: #fff4e3 !important;
+    transform: translate(550%, -240%);
+    position: absolute;
+  }
+  .combostyle .foodItem .foodimgcontainer img {
+    position: relative;
+    z-index: 1000;
+    width: auto;
+    height: auto;
+  }
+  .combostyle .foodItem .foodimgcontainer {
+    position: absolute !important;
+    z-index: auto;
+    transform: scale(2.8) translate(-10px, -16.5%);
+    background-color: #fff4e3;
+  }
+  .combostyle .foodItem .price-addtocart {
+    font-family: M PLus 1p, sans-serif;
+    font-weight: 600;
+    position: relative;
+    left: 420px;
+  }
+  .combostyle .foodItem:nth-child(even) .foodimgcontainer {
+    margin-left: 650px;
+  }
+  .combostyle .foodItem:nth-child(even) .foodinfo {
+    transform: translate(100%, -240%);
+  }
+  .combostyle .foodItem:nth-child(even) .price-addtocart {
+    background-color: #fff4e3 !important;
+    transform: translate(-900%, 0%);
+  }
+  
+  @media only screen and (max-width: 885px) {
+    .combostyle .foodItem .foodinfo {
+      background-color: #fff4e3 !important;
+      transform: translate(220%, -240%);
+      position: absolute;
+    }
+  
+    .combostyle .foodItem .foodimgcontainer {
+      position: absolute;
+      z-index: auto;
+      background-color: #fff4e3;
+      transform: scale(2.5) translate(-5px, -13%);
+    }
+    .combostyle .foodItem:nth-child(even) .foodimgcontainer {
+      transform: scale(2.5);
+      margin-bottom: 42px;
+      margin-left: 65% !important; /* Reset margin for mobile */
+      z-index: auto;
+      position: absolute;
+    }
+  }
+  @media screen and (max-width: 645px) {
+    .combostyle .foodItem .price-addtocart {
+      transform: translate(-250%, 0);
+    }
+    .combostyle .foodItem .foodimgcontainer {
+      position: absolute;
+      z-index: auto;
+      background-color: #fff4e3;
+      transform: scale(2.3) translate(-10px, -9.5%);
+    }
+    .combostyle .foodItem:nth-child(even) .foodimgcontainer {
+      transform: scale(2.3);
+      margin-bottom: 28px;
+      margin-left: 55% !important; /* Reset margin for mobile */
+      z-index: auto;
+      position: absolute;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .combostyle .foodItem .price-addtocart {
+      transform: translate(-500%, 0);
+    }
+    .combostyle .foodItem .foodimgcontainer {
+      position: absolute;
+      z-index: auto;
+      background-color: #fff4e3;
+      transform: scale(2) translate(-10px, -16%);
+    }
+    .combostyle .foodItem:nth-child(even) .foodimgcontainer {
+      transform: scale(2) translate(0px, -9%);
+      margin-bottom: 22px;
+      margin-left: 53% !important; /* Reset margin for mobile */
+      z-index: auto;
+      position: absolute;
+    }
+  }

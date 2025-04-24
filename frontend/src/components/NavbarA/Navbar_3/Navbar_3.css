@@ -1,0 +1,86 @@
+.nav3_container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar3 {
+  background-color: #d9ba58;
+  width: 100%;
+}
+
+.nav3-list {
+  display: flex;
+  justify-content: center; /* Changed from center to stretch items evenly */
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  flex-wrap: nowrap; /* Changed from wrap to nowrap to keep items in one line */
+}
+
+.nav3-item {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  flex: 1; /* Makes items take equal width */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  transition: background-color 0.3s ease;
+  min-width: 0; /* Prevents overflow issues */
+}
+
+.nav3-link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav3-link.active {
+  font-weight: 800;
+  background-color: #f3b315;
+}
+
+.nav3-item:hover {
+  font-weight: 800;
+  background-color: #e5cf87;
+}
+
+/* Responsive Styles */
+@media (max-width: 885px) {
+  .nav3-item {
+    font-size: 14px;
+    white-space: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav3-list {
+    flex-direction: row; /* Keep it in one line, override previous media query if needed */
+  }
+
+  .nav3-item {
+    font-size: 10px;
+    white-space: wrap;
+    margin: 0; /* Remove margin to avoid gaps */
+  }
+}

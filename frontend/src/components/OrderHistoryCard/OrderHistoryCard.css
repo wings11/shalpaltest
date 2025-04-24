@@ -1,0 +1,44 @@
+.order-history-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  background-color: #d9d9d9;
+  transition: all 0.2s ease-in-out;
+}
+.order-history-card:hover {
+  background-color: #7f7f7f;
+}
+
+.order-history-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.order-history-table,
+.order-history-date-time,
+.order-history-status,
+.order-history-completed {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.order-history-status {
+  font-weight: bold;
+  color: #28a745; /* Green for Completed status */
+}
+
+.view-btn {
+  width: 100px;
+  height: 34px;
+  background-color: #d9d9d9;
+}

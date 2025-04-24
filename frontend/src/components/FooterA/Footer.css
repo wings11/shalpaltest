@@ -1,0 +1,150 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 20px 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.tableNumberShow {
+  padding: 15px 20px 15px 15px;
+  display: inline;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+.tableNumberShow span {
+  font-size: 16px;
+
+  font-weight: 800;
+}
+select.table-select {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 800;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-left: 20px;
+}
+
+.table-select:focus {
+  border-color: #888;
+}
+
+button.gotoOrder {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 20px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  text-decoration: none;
+}
+.table-select option {
+  font-size: 16px;
+  color: black;
+  background-color: #d9d9d9;
+  padding: 8px;
+}
+
+.table-select option:hover {
+  background-color: #888 !important;
+  color: #000;
+}
+
+.table-select option:checked {
+  background-color: #888;
+  color: #fff;
+}
+
+/* alart overly */
+.alert-overlay-ordered {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.alert-box-ordered {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 200px;
+  width: 500px;
+  border: 1px solid black;
+  position: relative;
+  margin-top: 100px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.alert-box-ordered h3 {
+  margin: 35px 0px;
+  font-size: 18px;
+  overflow-y: hidden;
+}
+
+.alert-box-ordered button {
+  padding: 10px 20px !important;
+  border: 1px solid black !important;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .tableNumberShow span {
+    font-size: 12px;
+  }
+  button.gotoOrder {
+    font-size: 12px;
+    padding: 15px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px 50px;
+  }
+  .tableNumberShow {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tableNumberShow span {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  select.table-select {
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  button.gotoOrder {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+}

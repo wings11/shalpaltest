@@ -1,0 +1,153 @@
+.footer {
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff4e3;
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8),
+      inset 0 -2px 5px rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  .footer-content button {
+    background: rgba(237, 196, 72, 0.7);
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    transition: 0.5s;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3),
+      inset -4px -4px 10px rgba(255, 255, 255, 0.2);
+    color: #333; /* Explicitly set text color to avoid default blue */
+    text-decoration: none; /* Ensure no underline */
+  }
+  
+  .footer-content button:active {
+    filter: brightness(1.1) drop-shadow(1px 1px 2px #515151);
+  }
+  
+  button.today {
+    padding: 15px 30px;
+    text-decoration: none; /* Ensure no underline */
+  }
+  
+  button.combo {
+    padding: 15px 50px;
+    text-decoration: none; /* Ensure no underline */
+  }
+  
+  a.linktoday,
+  a.linkcombo {
+    margin: 0px;
+    text-decoration: none; /* Ensure no underline */
+    color: #333; /* Explicitly set text color to avoid default blue */
+  }
+  
+  /* Ensure link styles persist across states */
+  a.linktoday:hover,
+  a.linkcombo:hover,
+  a.linktoday:visited,
+  a.linkcombo:visited,
+  a.linktoday:active,
+  a.linkcombo:active {
+    text-decoration: none; /* Ensure no underline in any state */
+    color: #333; /* Maintain consistent text color */
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      display: flex !important;
+      flex-direction: column !important;
+      height: 110px !important;
+      margin-top: 0px;
+    }
+  
+    .footer-content {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow-y: hidden;
+      margin-top: 0px;
+      padding: 15px 0px;
+      margin: 0px;
+    }
+  
+    .footer-content button {
+      position: relative;
+      border-radius: 30px !important;
+      height: 46px;
+      width: auto;
+      font-size: clamp(10px, 2vw, 100px);
+      white-space: nowrap;
+      margin: 0px 10px;
+      color: #333; /* Maintain text color */
+      text-decoration: none; /* Ensure no underline */
+    }
+  
+    .footer-content a {
+      align-items: center;
+      display: flex;
+      text-decoration: none; /* Ensure no underline */
+      overflow-y: hidden;
+      height: 60px;
+      margin-right: -4px;
+      color: #333; /* Maintain text color */
+    }
+  
+    button.today {
+      padding: 0px 40px !important;
+      margin-right: 10px !important;
+      text-decoration: none; /* Ensure no underline */
+    }
+  
+    button.combo {
+      padding: 0px 51px !important;
+      text-decoration: none; /* Ensure no underline */
+    }
+  
+    a.linktoday,
+    a.linkcombo {
+      text-decoration: none; /* Corrected selector and ensured no underline */
+      color: #333; /* Maintain text color */
+    }
+  
+    /* Ensure link styles persist across states in media query */
+    a.linktoday:hover,
+    a.linkcombo:hover,
+    a.linktoday:visited,
+    a.linkcombo:visited,
+    a.linktoday:active,
+    a.linkcombo:active {
+      text-decoration: none; /* Ensure no underline in any state */
+      color: #333; /* Maintain consistent text color */
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    button.today {
+      padding: 0px 30px !important;
+      margin-right: 10px !important;
+      text-decoration: none; /* Ensure no underline */
+    }
+  
+    button.combo {
+      padding: 0px 40px !important;
+      text-decoration: none; /* Ensure no underline */
+    }
+  }

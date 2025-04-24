@@ -1,0 +1,122 @@
+.table-card-display {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .table-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .add-table-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+  }
+  
+  .add-table-content {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .add-table-content i {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  .text-add {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .alert-overlay-add-table {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .alert-box-add-table {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .alert-box-add-table i.bi-x-lg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .table-number-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .alert-box-input-table {
+    width: 80%;
+    padding: 8px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .alert-box-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .alert-box-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .alert-box-buttons button:first-child {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .alert-box-buttons button:first-child:hover {
+    background-color: #0056b3;
+  }
+  
+  .alert-box-buttons button:last-child {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .alert-box-buttons button:last-child:hover {
+    background-color: #999;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }

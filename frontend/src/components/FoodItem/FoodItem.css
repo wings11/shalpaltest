@@ -1,0 +1,161 @@
+.foodItem {
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    font-family: "M PLUS 1p", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #f7ead4;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    min-width: 412px;
+    min-height: 127px;
+    max-width: 700px;
+    cursor: pointer;
+    user-select: none; /* Prevents text selection */
+    outline: none; /* Removes default focus outline */
+  }
+  
+  .foodItem:hover {
+    filter: brightness(0.98);
+  }
+  .foodimgcontainer {
+    width: auto;
+    height: auto;
+  }
+  .foodimgcontainer img {
+    width: 80px !important;
+    height: 80px;
+  }
+  
+  .foodinfo {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .foodinfo p {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 5px 0;
+    margin-bottom: 0px;
+  }
+  
+  .foodinfo span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .price-addtocart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-top: 10px;
+  }
+  
+  .foodprice p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .price-addtocart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .price-addtocart button {
+    border: none;
+    background-color: transparent;
+    border-radius: 500%;
+    width: 30px;
+    color: black;
+    font-size: 16px;
+  }
+  .price-addtocart i:active {
+    background-color: black;
+    opacity: 0.4;
+    color: #fff4e3;
+    border-radius: 180px;
+  }
+  .price-addtocart i {
+    font-size: 20px !important;
+  } /* Container for the options */
+  .fooditem-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Styling for each option button */
+  .option-button {
+    border: 1px solid #000;
+    border-radius: 5px;
+  
+    width: 69px;
+    height: 20px;
+    background-color: transparent;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow-y: hidden;
+  }
+  
+  /* Selected (focus) effect */
+  .option-button.selected {
+    background-color: #ba915a; /* Match the theme color from the screenshot */
+    color: #fff; /* White text for contrast */
+    border-color: #ba915a; /* Match the border to the background */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for focus effect */
+  }
+  
+  /* Optional: Remove default focus outline for accessibility */
+  .option-button:focus {
+    outline: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .foodItem {
+      margin-top: 10px;
+      margin-bottom: 0px !important;
+      padding: 0px 20px !important;
+      max-width: 380px !important;
+      margin-bottom: 30px;
+    }
+  
+    .foodimgcontainer img {
+      width: 65px;
+      margin: 10px 0px;
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .foodItem {
+      margin-top: 10px;
+      margin-bottom: 0px !important;
+      padding: 0px 10px !important;
+      min-width: 320px !important;
+      height: auto;
+      min-height: 100px !important;
+      margin-bottom: 30px;
+    }
+  
+    .foodimgcontainer img {
+      width: 65px !important;
+      height: 65px !important;
+      margin: 10px 0px;
+      display: flex;
+    }
+    .price-addtocart p {
+      margin-bottom: 5px;
+    }
+  }

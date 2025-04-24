@@ -1,0 +1,12 @@
+body {
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
+
+  /* Ensure the container is scrollable */
+  overflow-y: auto;
+}
