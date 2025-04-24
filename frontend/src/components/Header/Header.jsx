@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
-import { assets } from "../../assets/assets";
+
 const Header = () => {
   const navigate = useNavigate();
   const [showAlert, setShowAlert] = useState(false);
@@ -33,7 +33,7 @@ const Header = () => {
         <div className={`alert-overlay ${fadeOut ? "fade-out" : ""}`}>
           <div className="alert-box ">
             <img
-              src={assets.bellring}
+              src='https://res.cloudinary.com/dakgb0zrs/image/upload/v1745520506/bellring_hgl3pc.gif'
               alt="Alert Icon"
               className="mx-auto mb-2"
             />

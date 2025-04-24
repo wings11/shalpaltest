@@ -268,7 +268,7 @@ const CheckoutCard = ({ name, orderType, staffName }) => {
         <div className="invoice-overlay" onClick={handleCloseModal}>
           <div className="invoice-box" onClick={(e) => e.stopPropagation()}>
             <div className="invoice-header">
-              {/* <img src={assets.logo} alt="logo" /> */}
+              <img src='https://res.cloudinary.com/dakgb0zrs/image/upload/v1745480251/logo_mw6gtv.svg' alt="logo" />
               <h6>
                 Ek Thaksin 5 Alley, Lak Hok, Mueang Pathum Thani District,
                 Pathum Thani 12000

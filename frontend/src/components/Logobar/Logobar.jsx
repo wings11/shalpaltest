@@ -1,12 +1,12 @@
 import React from "react";
 import "./Logobar.css";
-import { assets } from "../../assets/assets";
+
 
 const Logobar = () => {
   return (
     <div className="logobar">
       <div className="logofield">
-        <img src={assets.logo} />
+        <img src='https://res.cloudinary.com/dakgb0zrs/image/upload/v1745480251/logo_mw6gtv.svg' />
       </div>
       <div
         className="logotext"
@@ -16,7 +16,7 @@ const Logobar = () => {
         <span>Tea House</span>
       </div>
       <div className="contact">
-        <img src={assets.telephone} />
+        <img src='https://res.cloudinary.com/dakgb0zrs/image/upload/v1745520703/telephone_1_rnvm4i.svg' />
         <p>CONTACT US</p>
         <span>06-3849-2363</span>
       </div>
