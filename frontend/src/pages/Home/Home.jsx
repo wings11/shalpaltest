@@ -8,7 +8,7 @@ const Home = () => {
     const queryParams = new URLSearchParams(location.search);
     const table = queryParams.get('table');
     const token = queryParams.get('token');
-
+    const managementpath=`/management`;
     // Construct the menu link with query params if they exist
     const menuPath = `/PopularPicks${table && token ? `?table=${table}&token=${token}` : ''}`;
 
@@ -22,6 +22,7 @@ const Home = () => {
                     MENU
                     <img src='https://res.cloudinary.com/dakgb0zrs/image/upload/v1745521814/Arrow_1_2_exxfg1.svg' alt="to menu" />
                 </Link>
+                <Link to={managementpath}>Management</Link>
             </div>
         </div>
     );
